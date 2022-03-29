@@ -1,0 +1,296 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    overflow-y: scroll;
+    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../imagens/background3.png);
+    background-position: center;
+    background-size: cover;
+}
+
+h2 {
+    margin-left: 20px;
+    color: white;
+    font-size:large;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+h3 {
+    margin-left: 20px;
+    color: white;
+    font-size: medium;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.borda1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 18, 180, 0.5);
+    width: 14%;
+    height: 75%;
+    border-radius: 50px;
+    margin-left: 10%;
+    margin-top: 2%;
+    text-align: center;
+    color: black;
+    float:left;
+    border: 1px solid #ffffff;
+}
+
+.borda2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 18, 180, 0.5);
+    width: 14%;
+    height: 75%;
+    margin-top: 2%;
+    border-radius: 50px;
+    margin-left: 8%;
+    text-align: center;
+    color: black;
+    float:left;
+    border: 1px solid #ffffff;
+}
+
+.borda3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 18, 180, 0.5);
+    width: 14%;
+    height: 75%;
+    border-radius: 50px;
+    margin-left: 8%;
+    margin-top: 2%;
+    text-align: center;
+    color: black;
+    float:left;
+    border: 1px solid #ffffff;
+}
+
+.borda4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 18, 180, 0.5);
+    width: 14%;
+    height: 75%;
+    border-radius: 50px;
+    margin-left: 8%;
+    margin-top: 2%;
+    text-align: center;
+    color: black;
+    float:left;
+    margin-right: 8%;
+    border: 1px solid #ffffff;
+}
+
+.borda5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 18, 180, 0.5);
+    width: 80%;
+    height: 35%;
+    border-radius: 50px;
+    margin-left: 10%;
+    text-align: center;
+    color: black;
+    margin-top: 42%;
+    margin-bottom: 2%;
+    border: 1px solid #ffffff;
+}
+
+.borda1 h1{
+    margin-top: 40px;
+    color: white;
+    font-size:x-large;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.borda2 h1{
+    margin-top: 40px;
+    color: white;
+    font-size:x-large;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.borda3 h1{
+    margin-top: 40px;
+    color: white;
+    font-size:x-large;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.borda4 h1{
+    margin-top: 40px;
+    color: white;
+    font-size:x-large;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.borda5 h1{
+    margin-top: 40px;
+    color: white;
+    font-size:x-large;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    border: 1px solid #ffffff;
+    background: #ff8800e1;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    -moz-transform: all 0.3s;
+    -webkit-transform: all 0.3s;
+    transition: all 0.3s;
+}
+
+button:hover{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+
+}
+
+.b1{
+    margin-top: 20px;
+}
+
+button:active {
+    background: #41B883;
+}
+
+.bt1.active{
+    background: #41B883;
+}
+.bt2.active{
+    background: #41B883;
+}
+.bt3.active{
+    background: #41B883;
+}
+.bt4.active{
+    background: #41B883;
+}
+.bt5.active{
+    background: #41B883;
+}
+.bt6.active{
+    background: #41B883;
+}
+.bt7.active{
+    background: #41B883;
+}
+.bt8.active{
+    background: #41B883;
+}
+.bt9.active{
+    background: #41B883;
+}
+.bt10.active{
+    background: #41B883;
+}
+.bt11.active{
+    background: #41B883;
+}
+.bt12.active{
+    background: #41B883;
+}
+.bt13.active{
+    background: #41B883;
+}
+.bt14.active{
+    background: #41B883;
+}
+.bt15.active{
+    background: #41B883;
+}
+.bt16.active{
+    background: #41B883;
+}
+.bt17.active{
+    background: #41B883;
+}
+.bt18.active{
+    background: #41B883;
+}
+.bt19.active{
+    background: #41B883;
+}
+.bt20.active{
+    background: #41B883;
+}
+.bt21.active{
+    background: #41B883;
+}
+.bt22.active{
+    background: #41B883;
+}
+.bt23.active{
+    background: #41B883;
+}
+.bt24.active{
+    background: #41B883;
+}
+.bt25.active{
+    background: #41B883;
+}
+.bt26.active{
+    background: #41B883;
+}
+.bt27.active{
+    background: #41B883;
+}
+.bt28.active{
+    background: #41B883;
+}
+.bt29.active{
+    background: #41B883;
+}
+.bt30.active{
+    background: #41B883;
+}
+.bt31.active{
+    background: #41B883;
+}
+.bt32.active{
+    background: #41B883;
+}
+.bt33.active{
+    background: #41B883;
+}
+.bt34.active{
+    background: #41B883;
+}
+.bt35.active{
+    background: #41B883;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
