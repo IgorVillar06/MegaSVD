@@ -395,6 +395,18 @@ const Open = {
             document.querySelector('.bt33').classList.remove('active')
         }, 350)
     },
+    oculto() {
+        var oculto = "Não recomendo deixar invisível, além de não ajudar muito, uma rede invisível pode apresentar ainda alguns contratempos. O primeiro deles é o fato de que, sempre que alguém for se conectar com um novo dispositivo (que não tenha o nome da rede já memorizado), será preciso informar o SSID manualmente.É importante lembrar que alguns dispositivos podem não permitir reconexões automáticas em redes invisíveis, ou seja, mesmo que você já tenha se conectado antes, fazer isso de novo demandará o mesmo trabalho da primeira vez. Mais trabalho e menos praticidade..."
+        navigator.clipboard.writeText(oculto).then(function () {
+            console.log('Async: Copying to clipboard was successful!');
+        }, function (err) {
+            console.error('Async: Could not copy text: ', err);
+        });
+        document.querySelector('.bt34').classList.add('active')
+        setTimeout(() => {
+            document.querySelector('.bt34').classList.remove('active')
+        }, 350)
+    },
 
 
 
