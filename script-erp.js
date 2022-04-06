@@ -407,6 +407,66 @@ const Open = {
             document.querySelector('.bt34').classList.remove('active')
         }, 350)
     },
+    appm() {
+        var appm = "@cliente->nome, para sua maior comodidade, onde você terá a informações do seu plano, faturas e conexão de internet, indicamos o nosso aplicativo da Mega link telecom. Você encontra nosso app na loja virtual do google, a Play store. Segue o link do nosso app ->  https://play.google.com/store/apps/details?id=br.com.portal.megalink / Senha e Usuário são seu CPF sem pontos, sem traços, apenas números."
+        navigator.clipboard.writeText(appm).then(function () {
+            console.log('Async: Copying to clipboard was successful!');
+        }, function (err) {
+            console.error('Async: Could not copy text: ', err);
+        });
+        document.querySelector('.bt35').classList.add('active')
+        setTimeout(() => {
+            document.querySelector('.bt35').classList.remove('active')
+        }, 350)
+    },
+    crcoff() {
+        var crcoff = "Olá, @cliente->nome, infelizmente o setor correspondente não está disponível para essa tratativa, oriento a retornar contato em horário comercial. Ajudo com mais alguma informação ou procedimento?"
+        navigator.clipboard.writeText(crcoff).then(function () {
+            console.log('Async: Copying to clipboard was successful!');
+        }, function (err) {
+            console.error('Async: Could not copy text: ', err);
+        });
+        document.querySelector('.bt36').classList.add('active')
+        setTimeout(() => {
+            document.querySelector('.bt36').classList.remove('active')
+        }, 350)
+    },
+    iptvt() {
+        var iptvt = "O ideal é que o aparelho em que você for assistir o IPTV esteja conectado no cabo de rede. No sinal Wi-Fi tende a perder qualidade e ficar oscilando, porém, mesmo no cabo pode acontecer travamentos, pois, a maioria dos servidores de IPTV não estão no Brasil, o serviço de IPTV não é aprovado pela ANATEL, com isso, não possuem suporte e servidores de qualidade, oriento a entrar contato com o revendedor do seu link para ele verificar se está tudo certo..."
+        navigator.clipboard.writeText(iptvt).then(function () {
+            console.log('Async: Copying to clipboard was successful!');
+        }, function (err) {
+            console.error('Async: Could not copy text: ', err);
+        });
+        document.querySelector('.bt37').classList.add('active')
+        setTimeout(() => {
+            document.querySelector('.bt37').classList.remove('active')
+        }, 350)
+    },
+    segrot() {
+        var segrot = "Se notar que o seu roteador principal não está sendo o suficiente para cobrir toda a região da sua residência, recomendo a instalação de um segundo roteador para funcionar como repetidor de sinal, oriento que contrate um técnico de redes para ir a sua residência e o mesmo poderá analisar a área e indicar o melhor local para instalação e o roteador a ser adquirido."
+        navigator.clipboard.writeText(segrot).then(function () {
+            console.log('Async: Copying to clipboard was successful!');
+        }, function (err) {
+            console.error('Async: Could not copy text: ', err);
+        });
+        document.querySelector('.bt38').classList.add('active')
+        setTimeout(() => {
+            document.querySelector('.bt38').classList.remove('active')
+        }, 350)
+    },
+    ajudo() {
+        var ajudo = "@cliente->nome, ajudo com mais alguma informação ou procedimento?"
+        navigator.clipboard.writeText(ajudo).then(function () {
+            console.log('Async: Copying to clipboard was successful!');
+        }, function (err) {
+            console.error('Async: Could not copy text: ', err);
+        });
+        document.querySelector('.bt39').classList.add('active')
+        setTimeout(() => {
+            document.querySelector('.bt39').classList.remove('active')
+        }, 350)
+    },
 
 
 

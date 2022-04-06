@@ -97,7 +97,7 @@ h3 {
     align-items: center;
     background-color: rgba(0, 18, 180, 0.5);
     width: 80%;
-    height: 35%;
+    height: 40%;
     border-radius: 50px;
     margin-left: 10%;
     text-align: center;
@@ -279,7 +279,21 @@ button:active {
 .bt35.active{
     background: #41B883;
 }
-
+.bt36.active{
+    background: #41B883;
+}
+.bt37.active{
+    background: #41B883;
+}
+.bt38.active{
+    background: #41B883;
+}
+.bt39.active{
+    background: #41B883;
+}
+.bt40.active{
+    background: #41B883;
+}
 
 
 
