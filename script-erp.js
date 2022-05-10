@@ -467,6 +467,19 @@ const Open = {
             document.querySelector('.bt39').classList.remove('active')
         }, 350)
     },
+    visit() {
+        var visit = "Então, @cliente->primeiro_nome, como orientei vamos priorizar seu atendimento para realizar o quanto antes. De antemão lhe oriento a adquirir um plano (Corporativo), esse plano é destinado para micro e pequenas empresas, o mesmo possui um atendimento diferenciado com o prazo de 24 horas onde prezamos sempre em realizar nas primeiras 4 horas, agora seu contrato é pessoa física, enfim o suporte esta lhe ajudando da melhor forma."
+        navigator.clipboard.writeText(visit).then(function () {
+            console.log('Async: Copying to clipboard was successful!');
+        }, function (err) {
+            console.error('Async: Could not copy text: ', err);
+        });
+        document.querySelector('.bt40').classList.add('active')
+        setTimeout(() => {
+            document.querySelector('.bt40').classList.remove('active')
+        }, 350)
+    },
+
 
 
 
