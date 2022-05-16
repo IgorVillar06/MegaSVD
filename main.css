@@ -10,7 +10,7 @@
     height: 100vh;
     overflow: hidden;
     overflow-y: scroll;
-    background: linear-gradient(-45deg, rgba(48, 51, 107,1.0), rgba(72, 52, 212,1.0), rgba(211, 84, 0,1.0));
+    background: linear-gradient(-45deg, rgba(211, 84, 0,1.0), rgba(72, 52, 212,1.0), rgba(211, 84, 0,1.0));
     background-size: 400% 400%;
     position: relative;
     animation: change 10s ease-in-out infinite;
@@ -43,7 +43,12 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(0, 18, 180, 0.5);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     width: 14%;
     height: 75%;
     border-radius: 50px;
@@ -52,63 +57,19 @@ h3 {
     text-align: center;
     color: black;
     float:left;
-    border: 1px solid #ffffff;
+    
 }
 
 .borda2{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(0, 18, 180, 0.5);
-    width: 14%;
-    height: 75%;
-    margin-top: 2%;
-    border-radius: 50px;
-    margin-left: 8%;
-    text-align: center;
-    color: black;
-    float:left;
-    border: 1px solid #ffffff;
-}
-
-.borda3{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgba(0, 18, 180, 0.5);
-    width: 14%;
-    height: 75%;
-    border-radius: 50px;
-    margin-left: 8%;
-    margin-top: 2%;
-    text-align: center;
-    color: black;
-    float:left;
-    border: 1px solid #ffffff;
-}
-
-.borda4{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgba(0, 18, 180, 0.5);
-    width: 14%;
-    height: 75%;
-    border-radius: 50px;
-    margin-left: 8%;
-    margin-top: 2%;
-    text-align: center;
-    color: black;
-    float:left;
-    margin-right: 8%;
-    border: 1px solid #ffffff;
-}
-
-.borda5{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgba(0, 18, 180, 0.5);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     width: 80%;
     height: 40%;
     border-radius: 50px;
@@ -117,7 +78,6 @@ h3 {
     color: black;
     margin-top: 42%;
     margin-bottom: 2%;
-    border: 1px solid #ffffff;
 }
 
 .borda1 h1{
@@ -126,29 +86,7 @@ h3 {
     font-size:x-large;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
-
 .borda2 h1{
-    margin-top: 40px;
-    color: white;
-    font-size:x-large;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-}
-
-.borda3 h1{
-    margin-top: 40px;
-    color: white;
-    font-size:x-large;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-}
-
-.borda4 h1{
-    margin-top: 40px;
-    color: white;
-    font-size:x-large;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-}
-
-.borda5 h1{
     margin-top: 40px;
     color: white;
     font-size:x-large;
@@ -162,7 +100,7 @@ button{
     border-radius: 20px;
     font-weight: bold;
     border: 1px solid #ffffff;
-    background: #ff8800e1;
+    background: blue;
     color: #fff;
     cursor: pointer;
     position: relative;
