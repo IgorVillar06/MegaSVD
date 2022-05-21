@@ -1,6 +1,6 @@
 const Open = {
     senha() {
-        var senha = "Cliente solicita alteração da senha (nova senha:), após troca, cliente confirma conexão.";
+        var senha = "Cliente solicita alteração da senha (), após troca, cliente confirma conexão.";
         navigator.clipboard.writeText(senha).then(function () {
             console.log('Async: Copying to clipboard was successful!');
         }, function (err) {
@@ -372,7 +372,7 @@ const Open = {
         }, 350)
     },
     teste() {
-        var teste = "O teste de velocidade deve ser realizado no computador/notebook conectado ao cabo de rede ou em último caso pelo Wi-Fi, porém, conectado na rede 5G, no momento do teste se faz necessário estar próximo do equipamento (caso feito via Wi-Fi) e garantir que somente o computador/celular seja o único conectado na rede."
+        var teste = "@cliente->primeiro_nome, sabemos que medir a velocidade pelo Wi-Fi é mais fácil, afinal o celular está praticamente sempre em nossas mãos. Porém, ele foi feito para ter mobilidade e não alta velocidade! Então, sempre que quiser testar corretamente a velocidade da sua Internet, prefira realizar o teste com o seu computador/notebook conectado via cabo de rede ao roteador!"
         navigator.clipboard.writeText(teste).then(function () {
             console.log('Async: Copying to clipboard was successful!');
         }, function (err) {
