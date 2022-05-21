@@ -372,7 +372,7 @@ const Open = {
         }, 350)
     },
     teste() {
-        var teste = "@cliente->primeiro_nome, sabemos que medir a velocidade pelo Wi-Fi é mais fácil, afinal o celular está praticamente sempre em nossas mãos. Porém, ele foi feito para ter mobilidade e não alta velocidade! Então, sempre que quiser testar corretamente a velocidade da sua Internet, prefira realizar o teste com o seu computador/notebook conectado via cabo de rede ao roteador!"
+        var teste = "@cliente->primeiro_nome, sabemos que medir a velocidade pelo Wi-Fi é mais fácil, afinal o celular está praticamente sempre em nossas mãos. Porém, ele foi feito para ter mobilidade e não alta velocidade! Então, sempre que quiser testar corretamente a velocidade da sua Internet, prefira realizar o teste com o seu computador/notebook conectado via cabo de rede ao roteador! Lembre-se de desligar o Wi-Fi de todos os dispositivos que estiverem conectados ao roteador."
         navigator.clipboard.writeText(teste).then(function () {
             console.log('Async: Copying to clipboard was successful!');
         }, function (err) {
