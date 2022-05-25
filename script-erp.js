@@ -264,7 +264,7 @@ const Open = {
         }, 350)
     },
     detal() {
-        var detal = "Olá, @cliente->primeiro_nome, não detectei nenhuma anormalidade no sinal da sua fibra ou nas configurações do seu equipamento, me detalhe melhor essa lentidão, por gentileza. Em qual dispositivo está acontecendo?";
+        var detal = "@cliente->primeiro_nome, não detectei nenhuma anormalidade no sinal da sua fibra ou nas configurações do seu equipamento, me detalhe melhor essa lentidão, por gentileza. Em qual dispositivo está acontecendo?";
         navigator.clipboard.writeText(detal).then(function () {
             console.log('Async: Copying to clipboard was successful!');
         }, function (err) {
@@ -477,6 +477,18 @@ const Open = {
         document.querySelector('.bt40').classList.add('active')
         setTimeout(() => {
             document.querySelector('.bt40').classList.remove('active')
+        }, 350)
+    },
+    trav() {
+        var trav = "Cliente relata falta de conexão, identificado que o equipamento estava travado, ao reiniciar, cliente confirma normalização."
+        navigator.clipboard.writeText(trav).then(function () {
+            console.log('Async: Copying to clipboard was successful!');
+        }, function (err) {
+            console.error('Async: Could not copy text: ', err);
+        });
+        document.querySelector('.bt41').classList.add('active')
+        setTimeout(() => {
+            document.querySelector('.bt41').classList.remove('active')
         }, 350)
     },
 
