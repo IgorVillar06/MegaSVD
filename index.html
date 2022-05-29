@@ -86,21 +86,32 @@
         <div class="borda3">
             <h1>SVD - Incidentes</h1>
             <div class="b1">
-                <h6>Incidente: <input type="text"></h6>
-                <h6>OLT: <input type="text"></h6>
-                <h6>Protocolo: <input type="number"></h6>
-                <h6>-----------------------------------</h6>
-                <h6>Hora da ocorrência: <input type="time"></h6>
-                <h6>Equipe que abriu: Suporte Residencial</h6>
-                <h6>Motivo de abertura: Clientes off</h6>
-                <h6>Quantidade de clientes afetados: <input type=number></h6>
-                <h6>Equipe atualmente responsável: OPERACIONAL</h6>
-                <h6>-----------------------------------</h6>
-                <h6>Status: AGUARDANDO</h6>
-                <h6>Causa: <input type="text"></h6>
-                <h6>Observações: Slot/Porta afetados: <input type="text"></h6>
-                <h5>Ainda irei configurar os TextBox, fazer na raça por enquanto (copiar e colar manualmente).</h5>
+                <textarea name="infra" id="infra" cols="30" rows="10">
+ Incidente: 
+ OLT:
+ Protocolo:
+ -----------------------------------
+ Hora da ocorrência:
+ Equipe que abriu: Suporte Residencial
+ Motivo de abertura: 
+ Quantidade de clientes afetados:  
+ Equipe atualmente responsável: OPERACIONAL
+ -----------------------------------
+ Status: AGUARDANDO
+ Causa: 
+ Observações: Slot/Pon afetados: 
+                </textarea>
+                <button onclick="infra()">Copiar</button>
+                <a href="Abertura de protocolo para infra rompimento.pdf" target="_blank">Protocolo Infra</a>
             </div>
+            <script>
+                function infra() {
+                    var infra = document.getElementById("infra");
+                    infra.select();
+                    document.execCommand("copy");
+                    alert('Texto copiado:' + infra.value)
+                }
+            </script>
         </div>
     </div>
     <script src="./script-erp.js"></script>
