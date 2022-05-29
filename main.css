@@ -95,7 +95,7 @@ h6 {
     border:1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     width: 55%;
-    height: 65%;
+    height: 58%;
     border-radius: 25px;
     margin-left: 125px;
     text-align: center;
@@ -115,7 +115,7 @@ h6 {
     border:1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     width: 30%;
-    height: 65%;
+    height: 58%;
     border-radius: 25px;
     margin-left: 30px;
     text-align: left;
@@ -214,7 +214,7 @@ a{
     -webkit-transform: all 0.3s;
     transition: all 0.3s;  
     text-decoration: none;
-    position: absolute;
+    position: absolute; 
 }
 a:hover{
     -moz-transform: scale(1.1);
