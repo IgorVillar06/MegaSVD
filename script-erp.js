@@ -491,6 +491,56 @@ const Open = {
             document.querySelector('.bt41').classList.remove('active')
         }, 350)
     },
+    ativ() {
+        var ativ = "Ativação do novo cliente realizado com sucesso. Ativado com sinal: '-' e Acesso remoto habilitado: [    ] Sim    [    ] Não"
+        navigator.clipboard.writeText(ativ).then(function () {
+            console.log('Async: Copying to clipboard was successful!');
+        }, function (err) {
+            console.error('Async: Could not copy text: ', err);
+        });
+        document.querySelector('.bt42').classList.add('active')
+        setTimeout(() => {
+            document.querySelector('.bt42').classList.remove('active')
+        }, 350)
+    },
+    rota() {
+        var rota = "Técnico solicita vinculação da ONU na nova rota do cliente, vinculado com sucesso."
+        navigator.clipboard.writeText(rota).then(function () {
+            console.log('Async: Copying to clipboard was successful!');
+        }, function (err) {
+            console.error('Async: Could not copy text: ', err);
+        });
+        document.querySelector('.bt43').classList.add('active')
+        setTimeout(() => {
+            document.querySelector('.bt43').classList.remove('active')
+        }, 350)
+    },
+    onu() {
+        var rota = "Técnico solicita vinculação de uma nova ONU para o cliente, vinculado com sucesso."
+        navigator.clipboard.writeText(rota).then(function () {
+            console.log('Async: Copying to clipboard was successful!');
+        }, function (err) {
+            console.error('Async: Could not copy text: ', err);
+        });
+        document.querySelector('.bt44').classList.add('active')
+        setTimeout(() => {
+            document.querySelector('.bt44').classList.remove('active')
+        }, 350)
+    },
+    local() {
+        var rota = "Técnico solicita ligação, o mesmo não conseguiu localizar o cliente, (completar script...)"
+        navigator.clipboard.writeText(rota).then(function () {
+            console.log('Async: Copying to clipboard was successful!');
+        }, function (err) {
+            console.error('Async: Could not copy text: ', err);
+        });
+        document.querySelector('.bt45').classList.add('active')
+        setTimeout(() => {
+            document.querySelector('.bt45').classList.remove('active')
+        }, 350)
+    },
+
+
 
 
 
