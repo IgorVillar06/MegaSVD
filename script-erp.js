@@ -360,7 +360,7 @@ const Open = {
         }, 350)
     },
     novoend() {
-        var novoend = "Me confirme os dados do novo endereço: Avenida/Rua, Número, Bairro, Cep, Cidade, Ponto de referência e telefone para contato."
+        var novoend = "Confirme todas as informações abaixo com o novo endereço, por gentileza;\nAvenida/Rua:\nNúmero:\nBairro:\nCEP:\nCidade:\nPonto de referência:\nTelefone para contato:"
         navigator.clipboard.writeText(novoend).then(function () {
             console.log('Async: Copying to clipboard was successful!');
         }, function (err) {
