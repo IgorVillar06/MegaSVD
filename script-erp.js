@@ -264,7 +264,7 @@ const Open = {
         }, 350)
     },
     detal() {
-        var detal = "@cliente->primeiro_nome, não detectei nenhuma anormalidade no sinal da sua fibra ou nas configurações do seu equipamento, me detalhe melhor essa lentidão, por gentileza. Em qual dispositivo está acontecendo?";
+        var detal = "@cliente->primeiro_nome, fiz uma análise na sua conexão e não identifiquei nenhuma anormalidade no sinal da sua fibra ou nas configurações do seu equipamento, me detalhe melhor essa lentidão, por gentileza. Em qual dispositivo está acontecendo?";
         navigator.clipboard.writeText(detal).then(function () {
             console.log('Async: Copying to clipboard was successful!');
         }, function (err) {
@@ -336,7 +336,7 @@ const Open = {
         }, 350)
     },
     quals() {
-        var quals = "Olá, @cliente->primeiro_nome, qual a informação ou solicitação desejada?"
+        var quals = "Olá, @cliente->primeiro_nome, qual informação ou solicitação você precisa?"
         navigator.clipboard.writeText(quals).then(function () {
             console.log('Async: Copying to clipboard was successful!');
         }, function (err) {
@@ -348,7 +348,7 @@ const Open = {
         }, 350)
     },
     nsenha() {
-        var nsenha = "Qual a nova senha desejada? Deseja fazer a alteração no nome da rede também? (Lembrando que não recomendamos caracteres especiais como: @, $, &, espaço e e.t.c, os mesmos podem apresentar incompatibilidade em alguns dispositivos."
+        var nsenha = "Qual a nova senha desejada?\n\nDeseja fazer a alteração no nome da rede também?"
         navigator.clipboard.writeText(nsenha).then(function () {
             console.log('Async: Copying to clipboard was successful!');
         }, function (err) {
@@ -420,7 +420,7 @@ const Open = {
         }, 350)
     },
     crcoff() {
-        var crcoff = "Olá, @cliente->nome, infelizmente o setor correspondente não está disponível para essa tratativa, oriento a retornar contato em horário comercial. Ajudo com mais alguma informação ou procedimento?"
+        var crcoff = "Olá, @cliente->nome, sensivelmente o setor financeiro não está disponível para essa tratativa, somente o suporte técnico funciona 24h. Oriento que retorne contato em horário comercial. Ficou alguma dúvida sobre?"
         navigator.clipboard.writeText(crcoff).then(function () {
             console.log('Async: Copying to clipboard was successful!');
         }, function (err) {
@@ -432,7 +432,7 @@ const Open = {
         }, 350)
     },
     iptvt() {
-        var iptvt = "O ideal é que o aparelho em que você for assistir o IPTV esteja conectado no cabo de rede. No sinal Wi-Fi tende a perder qualidade e ficar oscilando, porém, mesmo no cabo pode acontecer travamentos, pois, a maioria dos servidores de IPTV não estão no Brasil, o serviço de IPTV não é aprovado pela ANATEL, com isso, não possuem suporte e servidores de qualidade, oriento a entrar contato com o revendedor do seu link para ele verificar se está tudo certo..."
+        var iptvt = "O ideal é que o aparelho em que você for assistir o IPTV esteja conectado no cabo de rede. No sinal Wi-Fi tende a perder qualidade e ficar oscilando, porém, mesmo no cabo pode acontecer travamentos, pois, a maioria dos servidores de IPTV não estão no Brasil, o serviço de IPTV não é aprovado pela ANATEL, com isso, não possuem suporte e servidores de qualidade, oriento a entrar contato com o revendedor do seu link para ele verificar se está tudo certo."
         navigator.clipboard.writeText(iptvt).then(function () {
             console.log('Async: Copying to clipboard was successful!');
         }, function (err) {
@@ -456,7 +456,7 @@ const Open = {
         }, 350)
     },
     ajudo() {
-        var ajudo = "@cliente->nome, ajudo com mais alguma informação ou procedimento?"
+        var ajudo = "@cliente->nome, necessário mais alguma informação ou procedimento?"
         navigator.clipboard.writeText(ajudo).then(function () {
             console.log('Async: Copying to clipboard was successful!');
         }, function (err) {
@@ -480,7 +480,7 @@ const Open = {
         }, 350)
     },
     trav() {
-        var trav = "Cliente relata falta de conexão, identificado que o equipamento estava travado, ao reiniciar, cliente confirma normalização."
+        var trav = "Cliente relata falta de acesso, ONU com sinal e conexão com IP, identificado que o equipamento estava travado, ao reiniciar, cliente confirma normalização."
         navigator.clipboard.writeText(trav).then(function () {
             console.log('Async: Copying to clipboard was successful!');
         }, function (err) {
@@ -537,6 +537,18 @@ const Open = {
         document.querySelector('.bt45').classList.add('active')
         setTimeout(() => {
             document.querySelector('.bt45').classList.remove('active')
+        }, 350)
+    },
+    infra() {
+        var infra = "Incidente: \nOLT: \nProtocolo: \n-----------------------------------\nHora da ocorrência: \nEquipe que abriu: Suporte Residencial\nMotivo de abertura: Clientes OFF\nQuantidade de clientes afetados: \nEquipe atualmente responsável: OPERACIONAL\n-----------------------------------\nStatus: AGUARDANDO\nCausa: \nSlot/Pon afetados: "
+        navigator.clipboard.writeText(infra).then(function () {
+            console.log('Async: Copying to clipboard was successful!');
+        }, function (err) {
+            console.error('Async: Could not copy text: ', err);
+        });
+        document.querySelector('.bt46').classList.add('active')
+        setTimeout(() => {
+            document.querySelector('.bt46').classList.remove('active')
         }, 350)
     },
 

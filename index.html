@@ -13,6 +13,9 @@
 
 <body>
     <div class="banner">
+        <div class="bg"></div>
+        <div class="bg bg2"></div>
+        <div class="bg bg3"></div>
         <div class="barra">
             <h1>Mega Suporte</h1>
         </div>
@@ -95,36 +98,11 @@
         <div class="borda3">
             <h1>SVD - Incidentes</h1>
             <div class="b1">
-                <textarea name="infra" id="infra" cols="30" rows="10">
- Incidente: 
- OLT:
- Protocolo:
- -----------------------------------
- Hora da ocorrência:
- Equipe que abriu: Suporte Residencial
- Motivo de abertura: Clientes OFF
- Quantidade de clientes afetados:  
- Equipe atualmente responsável: OPERACIONAL
- -----------------------------------
- Status: AGUARDANDO
- Causa: 
- Observações: Slot/Pon afetados: 
-                </textarea>
-                <button onclick="infra()">Copiar</button>
-                <a href="Abertura de protocolo para infra rompimento.pdf" target="_blank">Protocolo Infra</a>
+                <button class="bt46" onclick="Open.infra()" type="button">Protocolo INFRA</button>
             </div>
-            <script>
-                function infra() {
-                    var infra = document.getElementById("infra");
-                    infra.select();
-                    document.execCommand("copy");
-                    alert('Texto copiado:' + infra.value)
-                }
-            </script>
+            <a href="Abertura de protocolo para infra rompimento.pdf" target="_blank">Tutorial Infra</a>
         </div>
-        <div class="barra1">
-            <h1>Desenvolvido por Igor Villar, aceitando sugestões ;)</h1>
-        </div>
+        
     </div>
     <script src="./script-erp.js"></script>
 </body>

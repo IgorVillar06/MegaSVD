@@ -10,9 +10,56 @@
     height: 100vh;
     overflow: hidden;
     overflow-y: scroll;
-    background-image: linear-gradient(45deg, rgb(45, 11, 30) 0%, rgb(45, 11, 30) 49%,rgb(78, 19, 25) 49%, rgb(78, 19, 25) 67%,rgb(111, 27, 19) 67%, rgb(111, 27, 19) 76%,rgb(143, 36, 14) 76%, rgb(143, 36, 14) 81%,rgb(176, 44, 8) 81%, rgb(176, 44, 8) 82%,rgb(209, 52, 3) 82%, rgb(209, 52, 3) 100%);
     position: relative;
+    
 }
+
+.bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #1F01B9 50%, #f86300 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+  }
+  
+  .bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+  }
+  
+  .bg3 {
+    animation-duration:5s;
+  }
+  
+  .content {
+    background-color:rgba(255,255,255,.8);
+    border-radius:.25em;
+    box-shadow:0 0 .25em rgba(0,0,0,.25);
+    box-sizing:border-box;
+    left:50%;
+    padding:10vmin;
+    position:fixed;
+    text-align:center;
+    top:50%;
+    transform:translate(-50%, -50%);
+  }
+  
+  h1 {
+    font-family:monospace;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }
 
 h2 {
     margin-left: 20px;
@@ -101,10 +148,10 @@ h6 {
     border-radius: 20px;
     border:1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    width: 55%;
-    height: 58%;
+    width: 70%;
+    height: 50%;
     border-radius: 25px;
-    margin-left: 125px;
+    margin-left: 95px;
     text-align: center;
     color: black;
     margin-top: 5%;
@@ -114,15 +161,15 @@ h6 {
 .borda3{
     display:flex;
     flex-direction: column;
-    align-items: left;
+    align-items: center;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 20px;
     border:1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    width: 30%;
-    height: 58%;
+    width: 355px;
+    height: 50%;
     border-radius: 25px;
     margin-left: 30px;
     text-align: left;
@@ -131,21 +178,7 @@ h6 {
     margin-bottom: 2%;
     float:left;
 }
-textarea{
-    font-size: 20px;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 5px;
-    border:1px solid rgba(255, 255, 255, 0.18);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    width: 94%;
-    height: 330px;
-    margin-left: 20px;
-    color: white;
-    padding-top: 20px;
-    font-family:monospace;
-}
+
 
 .borda1 h1{
     margin-top: 40px;
@@ -185,7 +218,7 @@ button{
     padding: 15px 0;
     text-align: center;
     margin: 20px 10px;
-    border-radius: 20px;
+    border-radius: 10px;
     font-weight: bold;
     border: 1px solid #ffffff;
     background: blue;
@@ -196,6 +229,7 @@ button{
     -moz-transform: all 0.3s;
     -webkit-transform: all 0.3s;
     transition: all 0.3s;
+
 }
 
 button:hover{
@@ -205,23 +239,22 @@ button:hover{
 
 }
 a{
-    width: 150px;
+    width: 200px;
     padding: 15px 0;
     text-align: center;
     margin: 20px 10px;
     border-radius: 10px;
     font-weight: bold;
     border: 1px solid #ffffff;
-    background: orangered;
+    background: blue;
     color: #fff;
     cursor: pointer;
     position: relative;
     overflow: hidden;
     -moz-transform: all 0.3s;
     -webkit-transform: all 0.3s;
-    transition: all 0.3s;  
+    transition: all 0.3s; 
     text-decoration: none;
-    position: absolute; 
 }
 a:hover{
     -moz-transform: scale(1.1);
@@ -229,15 +262,7 @@ a:hover{
     transform: scale(1.1);
 
 }
-.borda3 button{
-    background: orangered;
-    width: 80px;
-    height: 50px;
-    border-radius: 10px;
-    margin-left: 20px;
 
-
-}
 
 img{
     display: flex;
@@ -387,6 +412,9 @@ button:active {
     background: #41B883;
 }
 .bt45.active{
+    background: #41B883;
+}
+.bt46.active{
     background: #41B883;
 }
 
