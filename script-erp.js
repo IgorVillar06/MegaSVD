@@ -180,7 +180,7 @@ const Open = {
         }, 350)
     },
     bloq() {
-        var bloq = "Cliente com bloqueio relata falta de conexão, informado sobre os boletos em aberto, encaminhado para o setor correspondente.";
+        var bloq = "Cliente com bloqueio informa que já pagou, encaminhado para o setor correspondente (CRC).";
         navigator.clipboard.writeText(bloq).then(function () {
             console.log('Async: Copying to clipboard was successful!');
         }, function (err) {
@@ -561,6 +561,30 @@ const Open = {
         document.querySelector('.bt48').classList.add('active')
         setTimeout(() => {
             document.querySelector('.bt48').classList.remove('active')
+        }, 350)
+    },
+    boleten() {
+        var boleten = "Cliente solicita 2ª via de boletos, encaminhado para o setor correspondente (CRC)."
+        navigator.clipboard.writeText(boleten).then(function () {
+            console.log('Async: Copying to clipboard was successful!');
+        }, function (err) {
+            console.error('Async: Could not copy text: ', err);
+        });
+        document.querySelector('.bt49').classList.add('active')
+        setTimeout(() => {
+            document.querySelector('.bt49').classList.remove('active')
+        }, 350)
+    },
+    boletev() {
+        var boletev = "Cliente solicita 2ª via de boletos, envio feito via WhatsApp, atendimento finalizado."
+        navigator.clipboard.writeText(boletev).then(function () {
+            console.log('Async: Copying to clipboard was successful!');
+        }, function (err) {
+            console.error('Async: Could not copy text: ', err);
+        });
+        document.querySelector('.bt50').classList.add('active')
+        setTimeout(() => {
+            document.querySelector('.bt50').classList.remove('active')
         }, 350)
     },
 
