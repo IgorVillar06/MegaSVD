@@ -11,7 +11,7 @@
     overflow: hidden;
     overflow-y: scroll;
     position: relative;
-    background: rgb(27, 27, 27);
+    background: #001d3d;
     
 }
 
@@ -223,7 +223,7 @@ button{
     border-radius: 10px;
     font-weight: bold;
     border: 1px solid #ffffff;
-    background: blue;
+    background: #FF570A;
     color: #fff;
     cursor: pointer;
     position: relative;
@@ -242,13 +242,13 @@ button:hover{
 }
 a{
     height: 100px;
-    padding: 15px 0;
+    padding: 15px 10px;
     text-align: center;
     margin: 20px 10px;
     border-radius: 10px;
     font-weight: bold;
     border: 1px solid #ffffff;
-    background: blue;
+    background: #FF570A;
     color: #fff;
     cursor: pointer;
     position: relative;

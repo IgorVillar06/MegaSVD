@@ -48,7 +48,7 @@ const Open = {
         }, 350)
     },
     dband() {
-        var dband = "As principais diferenças entre as ligações Wi-Fi a 2,4 GHz e a 5 GHz são a velocidade e o alcance.\n\nA frequência de 2,4 GHz do router Wi-Fi proporciona uma maior área de cobertura e é melhor para atravessar objetos sólidos, embora com uma velocidade limitada entre 20 Mb - 60 Mb.\n\nA frequência de 5 GHz do roteador Wi-Fi oferece maiores velocidades. Contudo, proporciona uma menor área de cobertura e tem maior dificuldade de atravessar objetos sólidos.\n\nAssim, uma transmissão a 2,4 GHz assegura Internet numa área maior, mas a menor velocidade, enquanto uma transmissão a 5 GHz proporciona velocidades maiores, mas menor alcance.\n\nSe pretender um alcance maior para os seus dispositivos, use 2,4 GHz. Se necessitar de uma velocidade maior e puder sacrificar o alcance, use a frequência de 5 GHz.";
+        var dband = "Cliente relata lentidão, sem anormalidade no sinal da fibra ou nas configurações do equipamento, explicado ao cliente a diferença entre as duas redes (2.4Ghz e 5Ghz) e orientado sobre o uso do cabo de rede sempre que possível.";
         navigator.clipboard.writeText(dband).then(function () {
             console.log('Async: Copying to clipboard was successful!');
         }, function (err) {
@@ -276,7 +276,7 @@ const Open = {
         }, 350)
     },
     dualb() {
-        var dualb = "O seu roteador é Dual Band (Banda dupla) que transmite um sinal de 2.4 GHz e 5.8 GHz da mesma unidade, fornecendo a você duas redes Wi-Fi. O sinal 2.4 GHz é uma conexão sem fio (Wi-fi) que fornece internet para uma área maior, mas sacrifica a velocidade, está tecnologia só irá passar entre 20Mb a 60Mb. Já o sinal 5.8 GHz fornece uma velocidade bem mais rápida para uma área menor, portanto, é importante primeiro garantir que seus dispositivos sejam compatíveis com a rede 5G e que estejam próximos ao roteador, para garantir um sinal de qualidade."
+        var dualb = "As principais diferenças entre as ligações Wi-Fi a 2,4 GHz e a 5 GHz são a velocidade e o alcance.\n\nA frequência de 2,4 GHz do router Wi-Fi proporciona uma maior área de cobertura e é melhor para atravessar objetos sólidos, embora com uma velocidade limitada entre 20 Mb - 60 Mb.\n\nA frequência de 5 GHz do roteador Wi-Fi oferece maiores velocidades. Contudo, proporciona uma menor área de cobertura e tem maior dificuldade de atravessar objetos sólidos.\n\nAssim, uma transmissão a 2,4 GHz assegura Internet numa área maior, mas a menor velocidade, enquanto uma transmissão a 5 GHz proporciona velocidades maiores, mas menor alcance.\n\nSe pretender um alcance maior para os seus dispositivos, use 2,4 GHz. Se necessitar de uma velocidade maior e puder sacrificar o alcance, use a frequência de 5 GHz."
         navigator.clipboard.writeText(dualb).then(function () {
             console.log('Async: Copying to clipboard was successful!');
         }, function (err) {
