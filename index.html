@@ -23,7 +23,8 @@
                 <button class="bt1" onclick="Open.senha()" type="button">Senha</button>
                 <button class="bt2" onclick="Open.app()" type="button">APP</button>
                 <button class="bt3" onclick="Open.roteador()" type="button">Segundo Roteador</button>
-
+                <button class="bt46" onclick="Open.flen()" type="button">F. Interação | Lentidão</button>
+                <button class="bt47" onclick="Open.face()" type="button">F. Interação | Sem acesso</button>
             </div>
         </div>
         <div class="borda1">
@@ -67,7 +68,6 @@
                 <button class="bt19" onclick="Open.plat()" type="button">Plataforma Streaming</button>
                 <button class="bt20" onclick="Open.cancelar()" type="button">Cancelamento</button>
                 <button class="bt21" onclick="Open.negoc()" type="button">Negociação</button>
-                <button class="bt22" onclick="Open.avisob()" type="button">Aviso Bloqueio</button>
             </div>
         </div>
         <div class="borda2">
@@ -88,17 +88,46 @@
                 <button class="bt35" onclick="Open.appm()" type="button">Aplicativo Megalink</button>
                 <button class="bt36" onclick="Open.crcoff()" type="button">Fora do horário comercial</button>
                 <button class="bt37" onclick="Open.iptvt()" type="button">Por que IPTV trava?</button>
-                <button class="bt38" onclick="Open.segrot()" type="button">Segundo roteador</button>
+                <button class="bt38" onclick="Open.segrot()" type="button">Roteador não supre?</button>
                 <button class="bt39" onclick="Open.ajudo()" type="button">Ajudo?</button>
                 <button class="bt40" onclick="Open.visit()" type="button">Visita demorando?</button>
+                <button class="bt48" onclick="Open.segundorot()" type="button">Segundo Roteador</button>
             </div>
         </div>
         <div class="borda3">
             <h1>SVD - Incidentes</h1>
             <div class="b1">
-                <button class="bt46" onclick="Open.infra()" type="button">Protocolo INFRA</button>
+                <textarea name="infra" id="infra" cols="30" rows="10">
+ Incidente: 
+ OLT: 
+ Protocolo: 
+ -----------------------------------
+ Hora da ocorrência: 
+ Equipe que abriu: Suporte Residencial
+ Motivo de abertura: Clientes OFF
+ Quantidade de clientes afetados: 
+ Equipe atualmente responsável: OPERACIONAL
+ -----------------------------------
+ Status: AGUARDANDO
+ Causa: 
+ Slot/Pon afetados: 
+                                   </textarea>
+                                   <button onclick="infra()">Copiar</button>
+                                   <a href="Abertura de protocolo para infra rompimento.pdf" target="_blank">| Tutorial |</a>
+                               </div>
+                               <script>
+                                   function infra() {
+                                       var infra = document.getElementById("infra");
+                                       infra.select();
+                                       document.execCommand("copy");
+                                       alert('Texto copiado:' + infra.value)
+                                   }
+                               </script>
+                           </div>
+                       </div>
+                       <script src="./script-erp.js"></script>
             </div>
-            <a href="Abertura de protocolo para infra rompimento.pdf" target="_blank">Tutorial Infra</a>
+           
         </div>
         
     </div>

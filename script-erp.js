@@ -48,7 +48,7 @@ const Open = {
         }, 350)
     },
     dband() {
-        var dband = "Cliente relata lentidão, identificado que não havia nenhuma anormalidade no sinal da fibra ou nas configurações do equipamento, explicado a diferença de dual band e orientado a cabear sempre que possível.";
+        var dband = "As principais diferenças entre as ligações Wi-Fi a 2,4 GHz e a 5 GHz são a velocidade e o alcance.\n\nA frequência de 2,4 GHz do router Wi-Fi proporciona uma maior área de cobertura e é melhor para atravessar objetos sólidos, embora com uma velocidade limitada entre 20 Mb - 60 Mb.\n\nA frequência de 5 GHz do roteador Wi-Fi oferece maiores velocidades. Contudo, proporciona uma menor área de cobertura e tem maior dificuldade de atravessar objetos sólidos.\n\nAssim, uma transmissão a 2,4 GHz assegura Internet numa área maior, mas a menor velocidade, enquanto uma transmissão a 5 GHz proporciona velocidades maiores, mas menor alcance.\n\nSe pretender um alcance maior para os seus dispositivos, use 2,4 GHz. Se necessitar de uma velocidade maior e puder sacrificar o alcance, use a frequência de 5 GHz.";
         navigator.clipboard.writeText(dband).then(function () {
             console.log('Async: Copying to clipboard was successful!');
         }, function (err) {
@@ -192,7 +192,7 @@ const Open = {
         }, 350)
     },
     desbloq() {
-        var desbloq = "Cliente solicita desbloqueio confiança, o mesmo já estava com o status normal, cliente confirma conexão.";
+        var desbloq = "Cliente solicita desbloqueio confiança, foi realizado automaticamente pelo atendimento eletrônico no começo do atendimento, informado ao cliente.";
         navigator.clipboard.writeText(desbloq).then(function () {
             console.log('Async: Copying to clipboard was successful!');
         }, function (err) {
@@ -249,18 +249,6 @@ const Open = {
         document.querySelector('.bt21').classList.add('active')
         setTimeout(()=>{
             document.querySelector('.bt21').classList.remove('active')
-        }, 350)
-    },
-    avisob() {
-        var avisob = "Cliente com redução relata lentidão, explicado o motivo da lentidão, encaminhado para o setor correspondente.";
-        navigator.clipboard.writeText(avisob).then(function () {
-            console.log('Async: Copying to clipboard was successful!');
-        }, function (err) {
-            console.error('Async: Could not copy text: ', err);
-        });
-        document.querySelector('.bt22').classList.add('active')
-        setTimeout(()=>{
-            document.querySelector('.bt22').classList.remove('active')
         }, 350)
     },
     detal() {
@@ -539,9 +527,9 @@ const Open = {
             document.querySelector('.bt45').classList.remove('active')
         }, 350)
     },
-    infra() {
-        var infra = "Incidente: \nOLT: \nProtocolo: \n-----------------------------------\nHora da ocorrência: \nEquipe que abriu: Suporte Residencial\nMotivo de abertura: Clientes OFF\nQuantidade de clientes afetados: \nEquipe atualmente responsável: OPERACIONAL\n-----------------------------------\nStatus: AGUARDANDO\nCausa: \nSlot/Pon afetados: "
-        navigator.clipboard.writeText(infra).then(function () {
+    flen() {
+        var flen = "Cliente relata lentidão, sem anormalidade no sinal da fibra ou nas configurações do equipamento, ao pedir detalhes da lentidão, atendimento finalizado por falta de interação."
+        navigator.clipboard.writeText(flen).then(function () {
             console.log('Async: Copying to clipboard was successful!');
         }, function (err) {
             console.error('Async: Could not copy text: ', err);
@@ -549,6 +537,30 @@ const Open = {
         document.querySelector('.bt46').classList.add('active')
         setTimeout(() => {
             document.querySelector('.bt46').classList.remove('active')
+        }, 350)
+    },
+    face() {
+        var face = "Cliente relata falta de conexão, sem anormalidade no sinal da fibra ou nas configurações do equipamento, ao pedir detalhes da falta de acesso, atendimento finalizado por falta de interação."
+        navigator.clipboard.writeText(face).then(function () {
+            console.log('Async: Copying to clipboard was successful!');
+        }, function (err) {
+            console.error('Async: Could not copy text: ', err);
+        });
+        document.querySelector('.bt47').classList.add('active')
+        setTimeout(() => {
+            document.querySelector('.bt47').classList.remove('active')
+        }, 350)
+    },
+    segundorot() {
+        var segundorot = "Sr(a). @cliente->primeiro_nome, o segundo roteador pode ser adquirido pela Megalink de duas formas:\n\nOpção 1: Realizar o upgrade para o plano 720 Mb Ultra, onde terá como vantagens: WI-FI DUO (2 ROTEADORES) + Mega Mais (Paramount+ e Watch) + Deezer Premium + Bittrainers + MegaProtege (Antivírus).\n\nOpção 2: Permanecer com seu plano atual e sendo incluso o valor de 19,90 mensal (caso o equipamento seja da Megalink) ou 9,90 mensal (caso o equipamento seja do(a) cliente)."
+        navigator.clipboard.writeText(segundorot).then(function () {
+            console.log('Async: Copying to clipboard was successful!');
+        }, function (err) {
+            console.error('Async: Could not copy text: ', err);
+        });
+        document.querySelector('.bt48').classList.add('active')
+        setTimeout(() => {
+            document.querySelector('.bt48').classList.remove('active')
         }, 350)
     },
 
