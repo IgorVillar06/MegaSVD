@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+body{
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif; 
+}
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    background: #201b2c;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: white;
+    text-shadow:-1px -1px 0px rgb(0, 0, 0), -1px 1px 0px rgb(0, 0, 0), 1px -1px 0px rgb(0, 0, 0), 1px 0px 0px rgb(0, 0, 0);
+    font-size: 40px;
+}
+
+.left{
+    width: 33vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.erp > h1 {
+    color: white;
+    font-size: 30px;
+
+}
+
+.center {
+    width: 34vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+textarea{
+    font-size: 16px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 5px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    width: 25vw;
+    height: 35vh;
+    margin-left: 15px;
+    color: white;
+    padding-top: 20px;
+    font-family:monospace;
+}
+
+.right {
+    width: 33vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+button {
+    padding: 15px 10px;
+    width: 180px;
+    background-color: #514869;
+    color: white;
+    display: block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-bottom: 28px;
+    text-transform: uppercase;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bolder;
+    transition: .5s;
+    border: 1px solid #333;
+    border-radius: 10px;
+    box-shadow: 0px 10px 40px #00000056;
+
+}
+
+button:hover {
+    color: #333;
+    background: white;
+}
+
+button:active {
+    background: #41B883;
+}
+
+.bt.active{
+    background: #41B883;
+}
+
+img {
+    width: 400px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+img:hover {
+    transform: scale(1.10, 1.10);
+}
+
+@media screen and (max-width: 768px) {
+    .main{
+        display: block;
+        block-size: auto;
+    }
+    .left{
+        width: 100vw;
+        height: 500px;
+    }
+    .right{
+        width: 100vw;
+        height: 400px;
+    }
+    img {
+        width: 350px;
+        position: relative;
+    }
+    h1 {
+        font-size: 20px;
+        text-align: center;
+        position: relative;
+    }
+}
+
+.popup-wrapper{
+    display: none;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    flex-direction: column;
+    text-align: center;
+    width: 85%;
+    height: 85%;
+    margin: 70px auto;
+    background: #2f2841;
+    position: relative;
+    border-radius: 20px;
+    
+}
+
+.popup-closer{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.popup-wrapper-infra{
+    display: none;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.popup-wrapper-hub{
+    display: none;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.erp{
+    display: flex;
+    margin: 0 50px;
+    height: 70vh;
+    width: 11vw;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border-radius: 25px;
+    text-align: center;
+    color: black;
+    float: left;
+}
+
+.erp > h1 {
+    font-size: medium;
+}
+
+.fivehub{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    width: 80vw;
+    height: 600px;
+    border-radius: 25px;
+    text-align: center;
+    color: black;
+    float:left;
+}
+
+.fivehub button{
+    display: flex;
+    flex-direction: row;
+    float: left;
+    margin: 0 15px;
+}
+
+.popup-infra {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    flex-direction: column;
+    text-align: center;
+    width: 40%;
+    height: 50%;
+    margin: 70px auto;
+    background: #2f2841;
+    position: relative;
+    border-radius: 20px;
+    
+}
+
+.popuphub {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    flex-direction: column;
+    text-align: center;
+    width: 85%;
+    height: 85%;
+    margin: 70px auto;
+    background: #2f2841;
+    position: relative;
+    border-radius: 20px;
+    
+}
+
+.bt1.active{
+    background: #41B883;
+}
+.bt2.active{
+    background: #41B883;
+}
+.bt3.active{
+    background: #41B883;
+}
+.bt4.active{
+    background: #41B883;
+}
+.bt5.active{
+    background: #41B883;
+}
+.bt6.active{
+    background: #41B883;
+}
+.bt7.active{
+    background: #41B883;
+}
+.bt8.active{
+    background: #41B883;
+}
+.bt9.active{
+    background: #41B883;
+}
+.bt10.active{
+    background: #41B883;
+}
+.bt11.active{
+    background: #41B883;
+}
+.bt12.active{
+    background: #41B883;
+}
+.bt13.active{
+    background: #41B883;
+}
+.bt14.active{
+    background: #41B883;
+}
+.bt15.active{
+    background: #41B883;
+}
+.bt16.active{
+    background: #41B883;
+}
+.bt17.active{
+    background: #41B883;
+}
+.bt18.active{
+    background: #41B883;
+}
+.bt19.active{
+    background: #41B883;
+}
+.bt20.active{
+    background: #41B883;
+}
+.bt21.active{
+    background: #41B883;
+}
+.bt22.active{
+    background: #41B883;
+}
+.bt23.active{
+    background: #41B883;
+}
+.bt24.active{
+    background: #41B883;
+}
+.bt25.active{
+    background: #41B883;
+}
+.bt26.active{
+    background: #41B883;
+}
+.bt27.active{
+    background: #41B883;
+}
+.bt28.active{
+    background: #41B883;
+}
+.bt29.active{
+    background: #41B883;
+}
+.bt30.active{
+    background: #41B883;
+}
+.bt31.active{
+    background: #41B883;
+}
+.bt32.active{
+    background: #41B883;
+}
+.bt33.active{
+    background: #41B883;
+}
+.bt34.active{
+    background: #41B883;
+}
+.bt35.active{
+    background: #41B883;
+}
+.bt36.active{
+    background: #41B883;
+}
+.bt37.active{
+    background: #41B883;
+}
+.bt38.active{
+    background: #41B883;
+}
+.bt39.active{
+    background: #41B883;
+}
+.bt40.active{
+    background: #41B883;
+}
+.bt41.active{
+    background: #41B883;
+}
+.bt42.active{
+    background: #41B883;
+}
+.bt43.active{
+    background: #41B883;
+}
+.bt44.active{
+    background: #41B883;
+}
+.bt45.active{
+    background: #41B883;
+}
+.bt46.active{
+    background: #41B883;
+}
+.bt47.active{
+    background: #41B883;
+}
+.bt48.active{
+    background: #41B883;
+}
+.bt49.active{
+    background: #41B883;
+}
+.bt50.active{
+    background: #41B883;
+}
+
+
+
+
+
+
+
+

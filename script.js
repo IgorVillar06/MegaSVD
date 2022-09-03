@@ -1,3 +1,54 @@
+const teste = document.querySelector("#teste")
+const popup = document.querySelector('.popup-wrapper')
+
+teste.addEventListener('click', () => {
+    popup.style.display = 'block'
+    console.log('cliquei')
+})
+
+popup.addEventListener('click', event => {
+    const classNameOfClickedElement = event.target.classList[0]
+    const classNames = ['popup-closer', 'popup-wrapper']
+    const shouldClosePopup = classNames.some(classNames => classNames === classNameOfClickedElement)
+    if(shouldClosePopup){
+        popup.style.display = 'none'
+    }  
+})
+
+const infra = document.querySelector("#infra")
+const popupinfra = document.querySelector('.popup-wrapper-infra')
+
+infra.addEventListener('click', () => {
+    popupinfra.style.display = 'block'
+    console.log('cliquei')
+})
+
+popupinfra.addEventListener('click', event => {
+    const classNameOfClickedElement = event.target.classList[0]
+    const classNames = ['popup-closer', 'popup-wrapper-infra']
+    const shouldClosePopup = classNames.some(classNames => classNames === classNameOfClickedElement)
+    if(shouldClosePopup){
+        popupinfra.style.display = 'none'
+    }  
+})
+
+const hub = document.querySelector("#hub")
+const popuphub = document.querySelector('.popup-wrapper-hub')
+
+hub.addEventListener('click', () => {
+    popuphub.style.display = 'block'
+    console.log('cliquei')
+})
+
+popuphub.addEventListener('click', event => {
+    const classNameOfClickedElement = event.target.classList[0]
+    const classNames = ['popup-closer', 'popup-wrapper-hub']
+    const shouldClosePopup = classNames.some(classNames => classNames === classNameOfClickedElement)
+    if(shouldClosePopup){
+        popuphub.style.display = 'none'
+    }  
+})
+
 const Open = {
     senha() {
         var senha = "Cliente solicita alteração da senha (), após troca, cliente confirma conexão.";
@@ -587,10 +638,6 @@ const Open = {
             document.querySelector('.bt50').classList.remove('active')
         }, 350)
     },
-
-
-
-
 
 
 }

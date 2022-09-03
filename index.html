@@ -1,104 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SVD | Tools</title>
-    <link rel="shortcut icon" href="./imagens/iconeM.ico" type="image/x-icon">
-    <link rel="stylesheet" href="main.css">
-    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css">
+    <title>SVD - TOOLS</title>
 </head>
-
 <body>
-    <div class="banner">
-        
-        <div class="barra">
-            <h1>Mega Suporte</h1>
-        </div>
-        <div class="borda1">
-            <h1>SVD - Atendimento</h1>
-            <div class="b1">
-                <button class="bt1" onclick="Open.senha()" type="button">Senha</button>
-                <button class="bt2" onclick="Open.app()" type="button">APP</button>
-                <button class="bt3" onclick="Open.roteador()" type="button">Segundo Roteador</button>
-                <button class="bt46" onclick="Open.flen()" type="button">F. Interação | Lentidão</button>
-                <button class="bt47" onclick="Open.face()" type="button">F. Interação | Sem acesso</button>
+    <div class="main">
+        <div class="left">
+            <H1>Protocolos (ERP)</H1>
+            <img id="teste" src="./personal-files-animate.svg" alt="estatic">
+            <div class="popup-wrapper">
+                <div class="popup">
+                    <div class="popup-closer">x</div>
+                    <div class="popup-content">
+                        <div class="erp">
+                            <h1>SVD - Atendimento</h1>
+                            <div class="b1">
+                                <button class="bt1" onclick="Open.senha()" type="button">Senha</button>
+                                <button class="bt2" onclick="Open.app()" type="button">APP</button>
+                                <button class="bt3" onclick="Open.roteador()" type="button">Segundo Roteador</button>
+                                <button class="bt46" onclick="Open.flen()" type="button">F.I Lentidão</button>
+                                <button class="bt47" onclick="Open.face()" type="button">F.I Sem acesso</button>
+                            </div>
+                        </div>
+                        <div class="erp">
+                            <h1>SVD - Lentidão</h1>
+                            <div class="b1">
+                                <button class="bt4" onclick="Open.dns()" type="button">DNS</button>
+                                <button class="bt5" onclick="Open.dband()" type="button">Dual Band</button>
+                                <button class="bt6" onclick="Open.iptv()" type="button">IPTV</button>
+                                <button class="bt7" onclick="Open.sinal()" type="button">Sinal Alto</button>
+                                <button class="bt8" onclick="Open.vizi()" type="button">Vizinho Usando Wi-Fi</button>
+                                <button class="bt9" onclick="Open.mac()" type="button">Conflito de MAC</button>
+                            </div>
+                        </div>
+                        <div class="erp">
+                            <h1>SVD - Sem Acesso</h1>
+                            <div class="b1">
+                                <button class="bt10" onclick="Open.los()" type="button">LOS</button>
+                                <button class="bt12" onclick="Open.equid()" type="button">Equip. Danificado</button>
+                                <button class="bt13" onclick="Open.sgen()" type="button">Situação na rede</button>
+                                <button class="bt14" onclick="Open.sdis()" type="button">Disp. do cliente</button>
+                                <button class="bt15" onclick="Open.desl()" type="button">Equip. desligado</button>
+                                <button class="bt41" onclick="Open.trav()" type="button">Equip. Travado</button>
+                            </div>
+                        </div>
+                        <div class="erp">
+                            <h1>Técnico</h1>
+                            <div class="b1">
+                                <button class="bt42" onclick="Open.ativ()" type="button">Ativação</button>
+                                <button class="bt43" onclick="Open.rota()" type="button">Mudança de rota</button>
+                                <button class="bt44" onclick="Open.onu()" type="button">Mudança de ONU</button>
+                                <button class="bt45" onclick="Open.local()" type="button">Não localizado</button>
+                            </div>
+                        </div>
+                        <div class="erp">
+                            <h1>CRC</h1>
+                            <div class="b1">
+                                <button class="bt16" onclick="Open.bloq()" type="button">Bloqueio (já pagou)</button>
+                                <button class="bt17" onclick="Open.desbloq()" type="button">Desbloqueio (BOT)</button>
+                                <button class="bt49" onclick="Open.boleten()" type="button">Boleto (CRC)</button>
+                                <button class="bt50" onclick="Open.boletev()" type="button">Boleto (Anexado)</button>
+                                <button class="bt19" onclick="Open.plat()" type="button">Streaming</button>
+                                <button class="bt20" onclick="Open.cancelar()" type="button">Cancelamento</button>
+                                <button class="bt21" onclick="Open.negoc()" type="button">Negociação</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="borda1">
-            <h1>SVD - Lentidão</h1>
-            <div class="b1">
-                <button class="bt4" onclick="Open.dns()" type="button">DNS</button>
-                <button class="bt5" onclick="Open.dband()" type="button">Dual Band</button>
-                <button class="bt6" onclick="Open.iptv()" type="button">IPTV</button>
-                <button class="bt7" onclick="Open.sinal()" type="button">Sinal Alto</button>
-                <button class="bt8" onclick="Open.vizi()" type="button">Vizinho Usando Wi-Fi</button>
-                <button class="bt9" onclick="Open.mac()" type="button">Conflito de MAC</button>
-            </div>
-        </div>
-        <div class="borda1">
-            <h1>SVD - Sem Acesso</h1>
-            <div class="b1">
-                <button class="bt10" onclick="Open.los()" type="button">LOS</button>
-                <button class="bt11" onclick="Open.equir()" type="button">Equipamento Resetado</button>
-                <button class="bt12" onclick="Open.equid()" type="button">Equipamento Danificado</button>
-                <button class="bt13" onclick="Open.sgen()" type="button">Situação Generalizada</button>
-                <button class="bt14" onclick="Open.sdis()" type="button">Dispositivo do cliente</button>
-                <button class="bt15" onclick="Open.desl()" type="button">Equipamento desligado</button>
-                <button class="bt41" onclick="Open.trav()" type="button">Equipamento Travado</button>
-            </div>
-        </div>
-        <div class="borda1">
-            <h1>Técnico</h1>
-            <div class="b1">
-                <button class="bt42" onclick="Open.ativ()" type="button">Ativação</button>
-                <button class="bt43" onclick="Open.rota()" type="button">Mudança de rota</button>
-                <button class="bt44" onclick="Open.onu()" type="button">Mudança de equipamento</button>
-                <button class="bt45" onclick="Open.local()" type="button">Cliente não localizado</button>
-            </div>
-        </div>
-        <div class="borda1">
-            <h1>CRC</h1>
-            <div class="b1">
-                <button class="bt16" onclick="Open.bloq()" type="button">Bloqueio (já pagou)</button>
-                <button class="bt17" onclick="Open.desbloq()" type="button">Desbloqueio Automático</button>
-                <button class="bt49" onclick="Open.boleten()" type="button">Boletos (Encaminhado)</button>
-                <button class="bt50" onclick="Open.boletev()" type="button">Boletos (Enviado)</button>
-                <button class="bt19" onclick="Open.plat()" type="button">Plataforma Streaming</button>
-                <button class="bt20" onclick="Open.cancelar()" type="button">Cancelamento</button>
-                <button class="bt21" onclick="Open.negoc()" type="button">Negociação</button>
-            </div>
-        </div>
-        <div class="borda2">
-            <h1>SVD - Scripts para 5Hub</h1>
-            <div class="b1">
-                <button class="bt23" onclick="Open.detal()" type="button">Detalhes da lentidão</button>
-                <button class="bt24" onclick="Open.quand()" type="button">Quantos dispositivos?</button>
-                <button class="bt25" onclick="Open.dualb()" type="button">Diferença de Dual Band</button>
-                <button class="bt26" onclick="Open.crede()" type="button">Cabo de rede</button>
-                <button class="bt27" onclick="Open.sgene()" type="button">Situação generalizada</button>
-                <button class="bt28" onclick="Open.any()" type="button">Any Desk</button>
-                <button class="bt29" onclick="Open.quals()" type="button">Qual solicitação?</button>
-                <button class="bt30" onclick="Open.nsenha()" type="button">Nova senha?</button>
-                <button class="bt31" onclick="Open.novoend()" type="button">Novo endereço?</button>
-                <button class="bt32" onclick="Open.teste()" type="button">Teste de velocidade</button>
-                <button class="bt33" onclick="Open.vizinho()" type="button">Vizinho usando internet</button>
-                <button class="bt34" onclick="Open.oculto()" type="button">Wi-Fi Oculto?</button>
-                <button class="bt35" onclick="Open.appm()" type="button">Aplicativo Megalink</button>
-                <button class="bt36" onclick="Open.crcoff()" type="button">Fora do horário comercial</button>
-                <button class="bt37" onclick="Open.iptvt()" type="button">Por que IPTV trava?</button>
-                <button class="bt38" onclick="Open.segrot()" type="button">Roteador não supre?</button>
-                <button class="bt39" onclick="Open.ajudo()" type="button">Ajudo?</button>
-                <button class="bt40" onclick="Open.visit()" type="button">Visita demorando?</button>
-                <button class="bt48" onclick="Open.segundorot()" type="button">Segundo Roteador</button>
-            </div>
-        </div>
-        <div class="borda3">
-            <h1>SVD - Incidentes</h1>
-            <div class="b1">
-                <textarea name="infra" id="infra" cols="30" rows="10">
+        <div class="center">
+            <H1>Incidentes (Infra)</H1>
+            <img id="infra" src="./computer-troubleshooting-animate.svg" alt="estatic">
+            <div class="popup-wrapper-infra">
+                <div class="popup-infra">
+                    <div class="popup-closer">x</div>
+                    <div class="popup-content">
+                        <textarea name="infra" id="infra" cols="30" rows="10">
  Incidente: 
  OLT: 
  Protocolo: 
@@ -112,40 +94,47 @@
  Status: AGUARDANDO
  Causa: 
  Slot/Pon afetados: 
-                                   </textarea>
-                                   <button onclick="infra()">Copiar</button>
-                                   <a href="Abertura de protocolo para infra rompimento.pdf" target="_blank"> Tutorial </a>
-                               </div>
-                               <script>
-                                   function infra() {
-                                       var infra = document.getElementById("infra");
-                                       infra.select();
-                                       document.execCommand("copy");
-                                       alert('Texto copiado:' + infra.value)
-                                   }
-                               </script>
-                           </div>
-            <div class="videos">
-                    <iframe width="372" height="209" src="https://www.youtube.com/embed/2RF-QrVY2_g" title="Por que compartilhar a internet pode ser um mau negócio" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe width="372" height="209" src="https://www.youtube.com/embed/esZjclyXOXU" title="A verdade sobre o Skygato" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe width="372" height="209" src="https://www.youtube.com/embed/ipk9468a6wc" title="Provedor regional faz milagre?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe width="372" height="209" src="https://www.youtube.com/embed/RiJTKQ31kcc" title="A importância da comunicação cliente e o provedor." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe width="372" height="209" src="https://www.youtube.com/embed/81EISCMePHY" title="A internet ta lenta ou teu equipamento ta velho?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe width="372" height="209" src="https://www.youtube.com/embed/OJhPF7O_56M" title="O que o churrasco tem a ver com a velocidade da internet?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe width="372" height="209" src="https://www.youtube.com/embed/sq6_cotbn40" title="Como escolher o roteador para sua internet voar?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe width="372" height="209" src="https://www.youtube.com/embed/GQMK6dKftDw" title="Como posicionar o roteador para ter um melhor sinal de Wi-Fi" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe width="372" height="209" src="https://www.youtube.com/embed/TYCEmemlKXc" title="O jeito de medir a velocidade da sua internet" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe width="372" height="209" src="https://www.youtube.com/embed/AzmHGrPt7pY" title="A internet caiu? Faça como a NASA!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-               </div>
-            
-                       </div>
-                       <script src="./script-erp.js"></script>
+                        </textarea>
+                    </div>
+                </div>
             </div>
-           
         </div>
-        
+        <div class="right">
+            <H1>Scripts (5Hub)</H1>
+            <img id="hub" src="./chat-bot-animate.svg" alt="estatic">
+            <div class="popup-wrapper-hub">
+                <div class="popuphub">
+                    <div class="popup-closer">x</div>
+                    <div class="popup-content">
+                        <div class="fivehub">
+                            <h1>SVD - Scripts para 5Hub</h1>
+                            <div class="b1">
+                                <button class="bt23" onclick="Open.detal()" type="button">Detalhes da lentidão</button>
+                                <button class="bt24" onclick="Open.quand()" type="button">Quantos dispositivos?</button>
+                                <button class="bt25" onclick="Open.dualb()" type="button">Diferença de Dual Band</button>
+                                <button class="bt26" onclick="Open.crede()" type="button">Cabo de rede</button>
+                                <button class="bt27" onclick="Open.sgene()" type="button">Situação generalizada</button>
+                                <button class="bt28" onclick="Open.any()" type="button">Any Desk</button>
+                                <button class="bt29" onclick="Open.quals()" type="button">Qual solicitação?</button>
+                                <button class="bt30" onclick="Open.nsenha()" type="button">Nova senha?</button>
+                                <button class="bt31" onclick="Open.novoend()" type="button">Novo endereço?</button>
+                                <button class="bt32" onclick="Open.teste()" type="button">Teste de velocidade</button>
+                                <button class="bt33" onclick="Open.vizinho()" type="button">Vizinho usando internet</button>
+                                <button class="bt34" onclick="Open.oculto()" type="button">Wi-Fi Oculto?</button>
+                                <button class="bt35" onclick="Open.appm()" type="button">Aplicativo Megalink</button>
+                                <button class="bt36" onclick="Open.crcoff()" type="button">Fora do horário comercial</button>
+                                <button class="bt37" onclick="Open.iptvt()" type="button">Por que IPTV trava?</button>
+                                <button class="bt38" onclick="Open.segrot()" type="button">Roteador não supre?</button>
+                                <button class="bt39" onclick="Open.ajudo()" type="button">Ajudo?</button>
+                                <button class="bt40" onclick="Open.visit()" type="button">Visita demorando?</button>
+                                <button class="bt48" onclick="Open.segundorot()" type="button">Segundo Roteador</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <script src="./script-erp.js"></script>
+    <script src="./script.js"></script>
 </body>
-
 </html>
