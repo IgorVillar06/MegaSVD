@@ -79,7 +79,7 @@ textarea{
 
 button {
     padding: 15px 10px;
-    width: 180px;
+    width: 186px;
     background-color: #514869;
     color: white;
     display: block;
@@ -95,7 +95,6 @@ button {
     border: 1px solid #333;
     border-radius: 10px;
     box-shadow: 0px 10px 40px #00000056;
-
 }
 
 button:hover {
@@ -109,6 +108,11 @@ button:active {
 
 .bt.active{
     background: #41B883;
+}
+
+.right button {
+    float: left;
+    margin: 15px 15px;
 }
 
 img {
@@ -231,19 +235,11 @@ img:hover {
     border-radius: 20px;
     border:1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    width: 80vw;
+    width: 45vw;
     height: 600px;
     border-radius: 25px;
     text-align: center;
     color: black;
-    float:left;
-}
-
-.fivehub button{
-    display: flex;
-    flex-direction: row;
-    float: left;
-    margin: 0 15px;
 }
 
 .popup-infra {
@@ -252,7 +248,7 @@ img:hover {
     align-items: center;    
     flex-direction: column;
     text-align: center;
-    width: 40%;
+    width: 30%;
     height: 50%;
     margin: 70px auto;
     background: #2f2841;
@@ -267,7 +263,7 @@ img:hover {
     align-items: center;    
     flex-direction: column;
     text-align: center;
-    width: 85%;
+    width: 50%;
     height: 85%;
     margin: 70px auto;
     background: #2f2841;
